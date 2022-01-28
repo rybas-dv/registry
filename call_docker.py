@@ -1,5 +1,9 @@
 import core
 
+# 1 получить все images
+# 2 получить все теги имеджа
+# 3 получить манифест, в манифесте есть слои в виде sha
+
 
 async def count_weight():
     tag_counter = 0

@@ -1,11 +1,6 @@
 import asyncio
 import call_tf
-from arguments_pars import arg_init
-
-
-# 1 получить все images
-# 2 получить все теги имеджа
-# 3 получить манифест, в манифесте есть слои в виде sha
+from arguments_parse import arg_init
 
 
 async def main():

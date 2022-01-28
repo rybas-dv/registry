@@ -1,5 +1,5 @@
 import aiohttp
-from arguments_pars import arg_init
+from arguments_parse import arg_init
 from core import session_obj, get_data
 
 
