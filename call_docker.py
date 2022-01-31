@@ -23,7 +23,9 @@ async def count_weight(host, un, pwd):
             ma = await resp.json()
             for i in range(len(ma["layers"])):
                 layer_size += ma["layers"][i]["size"]
-        final = {core.struct[m]["name"]: layer_size / 1000000}
-        final_str = [final, core.struct[m]["tags"][-1]]
-        print(final_str)
+                final = {core.struct[m]["name"]: layer_size / 1000000}
+                final_str = [final, core.struct[m]["tags"][-1]]
+                # layer_size = 0
+                print(final_str)
+
     await session.close()

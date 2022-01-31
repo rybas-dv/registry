@@ -9,7 +9,7 @@ async def transfer_tf(un, pwd, source_host, repo_name):
 
     for k in json_repo['items']:
         mod_path = str(k['path']).split('/')
-        async with session.get(url=k['downloadUrl']) as resp:
+        async with session.get(url=k['downloadUrl'], ssl=False) as resp:
             if resp.status == 200:
                 print(resp.status)
                 res = await resp.text()

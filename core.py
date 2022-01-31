@@ -1,3 +1,5 @@
+import ssl
+
 import aiohttp
 
 struct = {}
@@ -5,7 +7,7 @@ manifest = []
 
 
 async def get_data(session, url):
-    async with session.get(url, headers={'accept': 'application/json'}) as resp:
+    async with session.get(url, headers={'accept': 'application/json'}, ssl=False) as resp:
         data = await resp.json()
         return data
 
