@@ -15,8 +15,8 @@ Launch the script with:
 
 For example:
 
-    python3.8 main.py https://nexus.test.com admin password
-    python3.8 main.py https://nexus.test.com https://nexus2.test.com terraform-state admin1 password admin2 password
+    python3.8 main.py docker-count https://nexus.test.com admin password
+    python3.8 main.py raw https://nexus.test.com https://nexus2.test.com terraform-state admin1 password admin2 password
 
 You have to supply argument:
 
